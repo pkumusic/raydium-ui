@@ -60,6 +60,7 @@ const web3Plugin: Plugin = async (ctx, inject) => {
     endpoint = await getFastEndpoint($api, rpcs)
   }
 
+  console.log(endpoint)
   logger(`config from: ${configFrom}, strategy: ${strategy}, using ${endpoint}`)
 
   const web3 = createWeb3Instance(endpoint)

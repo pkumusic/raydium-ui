@@ -91,6 +91,22 @@ export const NATIVE_SOL: TokenInfo = {
 }
 
 export const TOKENS: Tokens = {
+  QIAO: {
+    symbol: 'QIAO',
+    name: 'QIAO-NAME',
+    mintAddress: '7WjdHo9xft2pZqQeYi6GrzwGcg1qJSvDYWovWJ1CT8Ag',
+    decimals: 9,
+    referrer: 'HTcarLHe7WRxBQCWvhVB8AP56pnEtJUV2jDGvcpY3xo5',
+    tags: ['raydium']
+  },
+  MUSIC: {
+    symbol: 'MUSIC',
+    name: 'MUSIC-NAME',
+    mintAddress: '5cRZGScGbM6jbhKpKpWfrc4VLuasu6riwk9XihHjM1P9',
+    decimals: 9,
+    referrer: 'HTcarLHe7WRxBQCWvhVB8AP56pnEtJUV2jDGvcpY3xo5',
+    tags: ['raydium']
+  },
   WSOL: {
     symbol: 'WSOL',
     name: 'Wrapped Solana',
@@ -1358,6 +1374,14 @@ export const TOKENS: Tokens = {
 }
 
 export const LP_TOKENS: Tokens = {
+  'QIAO-MUSIC': {
+    symbol: 'QIAO-MUSIC',
+    name: "QIAO-MUSIC LP",
+    coin: { ...TOKENS.QIAO },
+    pc: { ...TOKENS.MUSIC },
+    mintAddress: 'AJUDwwbhnCbpNqwKDceg9oG44LxHc8Ly446rTMcBZqSK',
+    decimals: TOKENS.QIAO.decimals
+  },
   'RAY-WUSDT': {
     symbol: 'RAY-WUSDT',
     name: 'RAY-WUSDT V2 LP',
